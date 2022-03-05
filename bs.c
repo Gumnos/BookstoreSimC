@@ -19,7 +19,6 @@
 
 int should_report(tries) {
     return !(tries % 1000);
-    //return (tries & 0x011111) == 0x010000;
 }
 
 enum Event {
