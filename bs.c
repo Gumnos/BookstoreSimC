@@ -110,7 +110,7 @@ int main() {
         }
     }
     printf("\n");
-    for (int i=0; i<= roll_index; i++)
+    for (int i=0; i< roll_index; i++)
         printf("%s, ", descriptions[rolls[i]]);
     printf("\n");
     printf("After %lu tries, earned $%i with patience=%i & time=%i on day %i\n",
