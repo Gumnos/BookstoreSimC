@@ -7,11 +7,13 @@
 #define COLOR 1
 #ifdef COLOR
 #define RED "\033[31m"
+#define BRRED "\033[31;1m"
 #define WHITE "\033[1m"
 #define GREEN "\033[32m"
 #define RESET "\033[0m"
 #else
 #define RED ""
+#define BRRED ""
 #define WHITE ""
 #define GREEN ""
 #define RESET ""
@@ -39,7 +41,7 @@ enum Event {
 
 const char* const descriptions[] = {
     "customer needs toilet",
-    "shoplifter",
+    RED "shoplifter" RESET,
     "book don't have",
     "wild animal",
     "complaint",
@@ -49,7 +51,7 @@ const char* const descriptions[] = {
     "can't find book",
     "haggling",
     "phone rings",
-    RED "buy your own books" RESET,
+    BRRED "buy your own books" RESET,
     WHITE "NEW DAY" RESET
     };
 
